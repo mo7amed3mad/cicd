@@ -10,8 +10,8 @@ jobs:
       - image: python:3.7-alpine3.11
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints: ["9b:6f:a6:21:0d:30:97:32:9e:c5:0d:18:3c:ef:a1:fc"] # You can get this ID in the section where you registered the SSH Key
+      #- add_ssh_keys:
+      #    fingerprints: ["9b:6f:a6:21:0d:30:97:32:9e:c5:0d:18:3c:ef:a1:fc"] # You can get this ID in the section where you registered the SSH Key
       - run:
           name: Install dependencies
           command: |
